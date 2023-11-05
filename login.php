@@ -26,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->fetch();
 
         if (password_verify($password, $db_password)) {
-            if ($is_2fa_enabled == 1) { // Sprawdzenie, czy 2FA jest włączone
-                // Pobierz adres e-mail na podstawie ID użytkownika
+            if ($is_2fa_enabled == 1) {
                 $email_query = "SELECT email FROM users WHERE id = ?";
                 $email_stmt = $db->prepare($email_query);
                 $email_stmt->bind_param("i", $user_id);
@@ -37,12 +36,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 $_SESSION['2fa_login'] = $user_id;
                 $_SESSION['2fa_email'] = $user_email; // Dodaj zmienną 2fa_email
-                header("Location: 2fa.php"); // Przekieruj na stronę 2FA
+                header("Location: 2fa.php");
                 exit;
             } else {
                 $_SESSION['user_id'] = $user_id;
                 $_SESSION['user_email'] = $user_email;
-                header("Location: home.php"); // Przekieruj na stronę po zalogowaniu
+                header("Location: home.php");
                 exit;
             }
         } else {
