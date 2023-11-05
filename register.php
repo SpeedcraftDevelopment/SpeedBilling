@@ -25,7 +25,7 @@ if (isset($_POST['register'])) {
     $countQuery = "SELECT COUNT(*) as count FROM users";
     $countResult = $db->query($countQuery);
     $countData = $countResult->fetch_assoc();
-    $nextUserID = $countData['count'] + 1; // Nowe ID będzie kolejnym dostępnym numerem
+    $nextUserID = $countData['count'] + 1;
 
     $checkEmailQuery = "SELECT email FROM users WHERE email = ?";
     $checkEmailStmt = $db->prepare($checkEmailQuery);
