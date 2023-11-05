@@ -20,7 +20,6 @@ if ($stmt->num_rows == 1) {
     $stmt->bind_result($usrname);
     $stmt->fetch();
 } else {
-    // Obsłuż sytuację, w której nie znaleziono użytkownika o podanym ID
     echo "Nie znaleziono użytkownika o podanym ID.";
     exit;
 }
