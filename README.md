@@ -8,10 +8,11 @@ Open source and free billing for hosting providers written in PHP with many func
 - Theme Support
 - Alert System
 - Audit Log
-- Ticket System (TODO)
+- Ticket System
 - Store (TODO)
 - PayPal Integration (TODO)
 - Stripe Integration (TODO)
+- Pterodactyl Integration (TODO)
 - API (TODO)
 
 ## Project Status
