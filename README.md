@@ -11,7 +11,7 @@ Open source and free billing for hosting providers written in PHP with many func
 - Ticket System
 - Store (TODO)
 - PayPal Integration (TODO)
-- Stripe Integration (TODO)
+- Stripe Integration
 - Pterodactyl Integration (TODO)
 - API (TODO)
 
