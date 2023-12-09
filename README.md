@@ -14,6 +14,8 @@ Open source and free billing for hosting providers written in PHP with many func
 - Stripe Integration
 - Pterodactyl Integration (TODO)
 - API (TODO)
+- Knowledge base (TODO)
+- Built-in Status Page (TODO)
 
 ## Project Status
 We are in the process of building the project, when we complete all the functions listed above and perform tests to prevent possible errors, we will release the project.
